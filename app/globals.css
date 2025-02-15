@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: auto;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  user-select: none;
+  caret-color: transparent;
+}
+
+/* Swiper pagination noktalarının rengini değiştir */
+.swiper-pagination-bullet {
+  background-color: white !important; /* Pasif noktalar beyaz olacak */
+  opacity: 0.6 !important;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #AB7C35 !important; /* Aktif nokta ana rengimiz olacak */
+  opacity: 1 !important;
+  transform: scale(1.3);
 }
