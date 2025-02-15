@@ -5,7 +5,7 @@ const Hero = () => {
         {/* Çark Arkada (Mobilde Ortada, Navbarın Altında Başlıyor) */}
         <div className="absolute top-10 md:static md:w-1/2 flex justify-center md:justify-start w-full opacity-30 md:opacity-100">
   <img 
-    src="/assets/gifs/gear.gif" 
+    src="/assets/gifs/gear.webp" 
     alt="Rotating Gear" 
     className="w-80 h-80 md:w-[500px] md:h-[500px] object-contain mx-auto md:mx-0"
   />
