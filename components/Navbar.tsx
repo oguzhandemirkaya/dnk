@@ -11,8 +11,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md shadow-md z-50 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
         
-        {/* Logo Hafif Sola Kaydırıldı */}
-        <Link href="/" className="flex items-center ml-[-10px]">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
           <Image 
             src="/assets/logo/logo.png" 
             alt="DNK Logo" 
@@ -22,7 +22,7 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Menü Ortada */}
+        {/* Menü */}
         <ul className="hidden md:flex gap-8 text-white font-medium text-lg">
           {["Home", "About Us", "Area of Expertise", "Contact"].map((item, index) => (
             <li key={index} className="text-center">
@@ -36,32 +36,30 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobil Menü Butonu Sağda */}
+        {/* Mobil Menü Butonu */}
         <div className="md:hidden text-white text-2xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-      {/* Mobil Menü Açılıp Kapanma Animasyonu */}
-      <div 
-        className={`absolute top-full left-0 w-full bg-black/90 backdrop-blur-lg text-center md:hidden shadow-lg transition-transform duration-300 ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        }`}
-      >
-        <ul className="text-white space-y-4 text-lg font-medium p-5">
-          {["Home", "About Us", "Area of Expertise", "Our Service", "Materials", "Sectors"].map((item, index) => (
-            <li key={index}>
-              <Link
-                href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="cursor-pointer hover:text-[#AB7C35] transition-all duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* Mobil Menü */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-full bg-black/90 backdrop-blur-lg text-center md:hidden shadow-lg transition-transform duration-300">
+          <ul className="text-white space-y-4 text-lg font-medium p-5">
+            {["Home", "About Us", "Area of Expertise", "Contact"].map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="cursor-pointer hover:text-[#AB7C35] transition-all duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

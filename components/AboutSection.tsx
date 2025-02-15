@@ -25,7 +25,7 @@ const AboutSection = () => {
         {/* Sağ Taraf - Görsel veya Efekt */}
         <div className="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
           <img 
-            src="/assets/images/about.jpg" 
+            src="/assets/images/about.webp" 
             alt="About DNK Machinery" 
             className="w-72 md:w-[400px] h-auto rounded-lg shadow-lg"
           />

@@ -7,7 +7,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
-        <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400"></div>
+      {/* İçerik */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Sol - Logo ve Açıklama */}
@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="text-lg font-semibold text-[#AB7C35]">Quick Links</h3>
           <ul className="mt-4 space-y-2">
-            {["About Us", "Area of Expertise", "Our Service", "Materials", "Sectors"].map((item, index) => (
+            {["Home", "About Us", "Area of Expertise", "Contact"].map((item, index) => (
               <li key={index}>
                 <Link
-                  href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="hover:text-[#AB7C35] transition"
                 >
                   {item}
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
 
       {/* Alt Bilgi */}
-      <div className="mt-10 pt-4 text-center text-sm text-gray-400">
+      <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
         © 2025 DNK Machinery. All Rights Reserved.
       </div>
     </footer>

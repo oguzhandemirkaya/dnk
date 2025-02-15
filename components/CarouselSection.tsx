@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 const carouselItems = [
-  { title: "20+ Years of Experience", description: "Serving industries with advanced manufacturing.", img: "/assets/images/experience.jpg" },
-  { title: "High-Quality Production", description: "We ensure precision in every component.", img: "/assets/images/quality.jpg" },
-  { title: "Innovative Solutions", description: "Cutting-edge technology for better performance.", img: "/assets/images/innovation.jpg" },
+  { title: "20+ Years of Experience", description: "Serving industries with advanced manufacturing.", img: "/assets/images/experience.webp" },
+  { title: "High-Quality Production", description: "We ensure precision in every component.", img: "/assets/images/quality.webp" },
+  { title: "Innovative Solutions", description: "Cutting-edge technology for better performance.", img: "/assets/images/innovation.webp" },
 ];
 
 const CarouselSection = () => {
@@ -22,7 +22,7 @@ const CarouselSection = () => {
         effect="coverflow"
         grabCursor
         centeredSlides
-        slidesPerView={2}
+        slidesPerView={2} 
         spaceBetween={20}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         coverflowEffect={{
@@ -42,23 +42,30 @@ const CarouselSection = () => {
             }"></span>`;
           },
         }}
-        
+        breakpoints={{
+          0: { slidesPerView: 1, spaceBetween: 0 }, 
+          768: { slidesPerView: 2, spaceBetween: 20 }
+        }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="w-full max-w-7xl" 
+        className="w-full max-w-7xl"
       >
         {carouselItems.map((item, index) => (
           <SwiperSlide
             key={index}
-            className="relative bg-black text-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center transition-transform transform hover:scale-105"
+            className="relative bg-black text-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center transition-transform transform hover:scale-105 w-full"
           >
             <div
-              className="w-full h-48 bg-cover bg-center rounded-lg"
+              className="w-full h-48 md:h-64 lg:h-72 bg-cover bg-center rounded-lg"
               style={{
                 backgroundImage: `url(${item.img})`,
               }}
             ></div>
-            <h3 className="text-2xl font-semibold mt-4">{item.title}</h3>
-            <p className="text-gray-300 mt-2">{item.description}</p>
+            <h3 className="text-2xl font-semibold mt-4 text-center max-w-md mx-auto">
+              {item.title}
+            </h3>
+            <p className="text-gray-300 mt-2 text-center max-w-md mx-auto">
+              {item.description}
+            </p>
           </SwiperSlide>
         ))}
         <div className="swiper-pagination !relative mt-6"></div>
