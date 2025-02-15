@@ -20,7 +20,7 @@ const AboutUs = () => {
         {[
           { title: "Energy Sector", icon: <FaIndustry size={50} className="text-[#AB7C35]" /> },
           { title: "Mining Industry", icon: <FaHardHat size={50} className="text-[#AB7C35]" /> },
-          { title: "Cement Production", icon: <FaTools size={50} className="text-[#AB7C35]" /> },
+          { title: "Cement Industry", icon: <FaTools size={50} className="text-[#AB7C35]" /> },
           { title: "Construction", icon: <FaBuilding size={50} className="text-[#AB7C35]" /> },
           { title: "Railway Systems", icon: <FaTrain size={50} className="text-[#AB7C35]" /> },
           { title: "General Machinery", icon: <FaCogs size={50} className="text-[#AB7C35]" /> },
