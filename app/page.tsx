@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Hero />
       <AboutSection />
-      <CarouselSection /> {/* Swiper.js ile avantajlar */}
-      <Advantages /> {/* React Icons ile listeleme */}
+      <CarouselSection /> 
+      <Advantages /> 
     </main>
   );
 }

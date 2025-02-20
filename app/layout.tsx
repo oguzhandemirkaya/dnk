@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body className="bg-black text-white">
         <Navbar />
         <main className="relative z-10 w-full max-w-7xl mx-auto px-6">{children}</main>
-        <Footer /> {/* Footer burada eklendi */}
+        <Footer /> 
       </body>
     </html>
   );

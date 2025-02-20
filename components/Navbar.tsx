@@ -11,7 +11,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md shadow-md z-50 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
         
-        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image 
             src="/assets/logo/logo.png" 
@@ -22,7 +21,6 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Menü */}
         <ul className="hidden md:flex gap-8 text-white font-medium text-lg">
           {["Home", "About Us", "Area of Expertise", "Contact"].map((item, index) => (
             <li key={index} className="text-center">
@@ -36,13 +34,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobil Menü Butonu */}
+  
         <div className="md:hidden text-white text-2xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-      {/* Mobil Menü */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-black/90 backdrop-blur-lg text-center md:hidden shadow-lg transition-transform duration-300">
           <ul className="text-white space-y-4 text-lg font-medium p-5">

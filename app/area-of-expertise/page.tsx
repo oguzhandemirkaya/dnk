@@ -5,7 +5,6 @@ import { FaDraftingCompass, FaCogs, FaTools, FaClipboardCheck, FaSearch, FaCube 
 const AreaOfExpertise = () => {
   return (
     <section className="py-20 px-8 max-w-7xl mx-auto text-white relative">
-      {/* Başlık ve Açıklama */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold text-[#AB7C35]">Our Expertise</h1>
         <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -14,7 +13,6 @@ const AreaOfExpertise = () => {
         </p>
       </div>
 
-      {/* Uzmanlık Alanları - Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative">
         {[ 
           { title: "Design & Engineering", icon: <FaDraftingCompass size={40} />, description: "Innovative design solutions and precise engineering processes for optimal results." },
@@ -33,8 +31,6 @@ const AreaOfExpertise = () => {
           </div>
         ))}
       </div>
-
-      {/* Neden DNK Machinery? */}
       <div className="mt-20 text-center">
         <h2 className="text-3xl font-bold text-[#AB7C35]">Why Choose DNK Machinery?</h2>
         <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">

@@ -7,10 +7,8 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
-      {/* İçerik */}
+  
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        {/* Sol - Logo ve Açıklama */}
         <div>
           <Image src="/assets/logo/logo.png" alt="DNK Logo" width={150} height={50} />
           <p className="mt-4 text-gray-300 text-sm leading-relaxed">
@@ -18,9 +16,7 @@ const Footer = () => {
             to industries like <span className="text-[#AB7C35] font-semibold">energy, mining, cement, construction, railways, and general machinery.</span>
             The company serves renowned consumers worldwide, aiming to strengthen its market position.
           </p>
-        </div>
-
-        {/* Orta - Navigasyon */}
+        </div>  
         <div className="text-center">
           <h3 className="text-lg font-semibold text-[#AB7C35]">Quick Links</h3>
           <ul className="mt-4 space-y-2">
@@ -36,8 +32,6 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
-        {/* Sağ - İletişim ve Misyon */}
         <div>
           <h3 className="text-lg font-semibold text-[#AB7C35]">Contact Us</h3>
           <ul className="mt-4 space-y-3">
@@ -59,8 +53,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
-      {/* Alt Bilgi */}
       <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
         © 2025 DNK Machinery. All Rights Reserved.
       </div>

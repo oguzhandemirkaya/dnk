@@ -5,7 +5,6 @@ import { FaIndustry, FaHardHat, FaTools, FaBuilding, FaTrain, FaCogs, FaFlask } 
 const AboutUs = () => {
   return (
     <section className="py-20 px-8 max-w-7xl mx-auto text-white">
-      {/* Başlık ve Açıklama */}
       <div className="text-center">
         <h1 className="text-5xl font-bold text-[#AB7C35]">About DNK Machinery</h1>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -14,8 +13,6 @@ const AboutUs = () => {
           energy, mining, cement, construction, railways, and general machinery.
         </p>
       </div>
-
-       {/* Sektörler ve Uzmanlık Alanları */}
        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
         {[
           { title: "Energy Sector", icon: <FaIndustry size={50} className="text-[#AB7C35]" /> },
@@ -36,7 +33,6 @@ const AboutUs = () => {
           </div>
         ))}
       </div>
-      {/* Malzeme Grupları - Daha Akıcı ve Sade */}
       <div className="mt-20">
         <h2 className="text-3xl font-bold text-[#AB7C35] text-center">Material Expertise</h2>
         <p className="mt-4 text-lg text-gray-300 text-center max-w-2xl mx-auto">
@@ -59,8 +55,6 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-
-      {/* Değerler & Misyon (Tikler Kaldırıldı, Daha Modern Hale Getirildi) */}
       <div className="mt-20 text-center">
         <h2 className="text-3xl font-bold text-[#AB7C35]">Our Commitment</h2>
         <div className="flex flex-wrap justify-center gap-6 mt-8">

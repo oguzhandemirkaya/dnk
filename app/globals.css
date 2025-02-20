@@ -23,9 +23,9 @@ img {
   caret-color: transparent;
 }
 
-/* Swiper pagination noktalarının rengini değiştir */
+
 .swiper-pagination-bullet {
-  background-color: white !important; /* Pasif noktalar beyaz olacak */
+  background-color: white !important; 
   opacity: 0.6 !important;
   width: 10px;
   height: 10px;
@@ -33,7 +33,7 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #AB7C35 !important; /* Aktif nokta ana rengimiz olacak */
+  background-color: #AB7C35 !important; 
   opacity: 1 !important;
   transform: scale(1.3);
 }

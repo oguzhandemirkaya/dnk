@@ -18,15 +18,12 @@ const ContactPage = () => {
 
   return (
     <section className="py-20 px-8 max-w-5xl mx-auto text-white">
-      {/* Başlık */}
       <div className="text-center">
         <h1 className="text-5xl font-bold text-[#AB7C35]">Contact Us</h1>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Have a question? Need assistance? Reach out to DNK Machinery for expert guidance.
         </p>
       </div>
-
-      {/* İletişim Bilgileri */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         {[
           { icon: <FaPhoneAlt size={30} />, text: "+90 541 721 41 65", href: "tel:+905417214165" },
@@ -41,8 +38,6 @@ const ContactPage = () => {
           </div>
         ))}
       </div>
-
-      {/* İletişim Formu */}
       <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-8">
         <h2 className="text-2xl font-semibold text-[#AB7C35] text-center">Send Us a Message</h2>
         <form className="mt-6 flex flex-col gap-6">
